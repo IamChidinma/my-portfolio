@@ -1,5 +1,5 @@
 import React from "react";
-import "./projects.css";
+import "./Projects.css";
 const projects = [
   {
     title: "Splita – Digital Ajo Savings Platform",
