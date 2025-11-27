@@ -28,6 +28,7 @@
 
 .name-title {
   font-size: 60px;
+  white-space: nowrap;
   font-weight: 700;
   line-height: 1.1;
   background: linear-gradient(90deg, #ff7f50, #ffb347);
@@ -116,7 +117,10 @@
     flex-direction: column;
     height: auto;
   }
-
+  .name-title {
+    font-size: 36px; /* smaller font for mobile */
+    white-space: normal; /* Allow wrapping */
+  }
   .text-panel {
     text-align: center;
     padding: 50px 30px;
