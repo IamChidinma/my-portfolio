@@ -1,0 +1,128 @@
+.hero-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #231f20;
+  color: #fef7f2;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-panel {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffb347;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+}
+
+.name-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #ff7f50, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.3s;
+}
+
+.role-title {
+  font-size: 24px;
+  color: #fef7f2;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.5s;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dcdcdc;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.7s;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7f50, #ffb347);
+  color: #231f20;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 8px 20px rgba(255, 127, 80, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.9s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 12px 25px rgba(255, 127, 80, 0.6);
+}
+
+.image-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-frame {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fef7f2;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text-panel {
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .image-panel {
+    margin-top: 30px;
+  }
+}
