@@ -6,7 +6,7 @@ import Hero from "./Components/Hero";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contacts from "./Pages/Contacts";
-import "./Mystyle.css";
+import "./App.css";
 
 export default function App() {
   return (
