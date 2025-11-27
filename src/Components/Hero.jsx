@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero-container">
       <div className="text-panel">
         <p className="portfolio-title">CREATIVE PORTFOLIO</p>
-        <h1 className="name-title">AMAECI CHIDINMA</h1>
+        <h1 className="name-title">AMAECHI CHIDINMA</h1>
         <p className="role-title">Frontend Developer</p>
         <p className="description">
           Crafting elegant, user-friendly digital experiences.
