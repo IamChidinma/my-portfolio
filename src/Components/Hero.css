@@ -112,21 +112,68 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .hero-container {
     flex-direction: column;
     height: auto;
-  }
-  .name-title {
-    font-size: 36px; /* smaller font for mobile */
-    white-space: normal; /* Allow wrapping */
-  }
-  .text-panel {
+    padding: 20px 10px;
     text-align: center;
-    padding: 50px 30px;
+  }
+
+  .text-panel {
+    padding: 30px 15px;
+    gap: 15px;
+  }
+
+  .portfolio-title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .name-title {
+    font-size: 28px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .role-title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #dcdcdc;
+  }
+
+  .cta-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    margin-top: 15px;
   }
 
   .image-panel {
-    margin-top: 30px;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
   }
+
+  .profile-frame {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.image-panel {
+  margin-top: 30px;
 }
